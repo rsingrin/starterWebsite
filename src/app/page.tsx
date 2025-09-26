@@ -62,8 +62,8 @@ export default function Home() {
 
   return (
     <main style={{ maxWidth: 720, margin: '2rem auto', fontFamily: 'system-ui' }}>
-      <h1>list of reasons to hate stephen</h1>
-      <p>Leave a short message to cus out dat jew</p>
+      <h1>list of reasons to hate Stephen</h1>
+      <p>Leave a short message to cus him out</p>
 
       <form onSubmit={handleSubmit} style={{ marginBottom: '1rem' }}>
         <input
