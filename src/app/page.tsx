@@ -1,7 +1,7 @@
 'use client' // Needed for React state/hooks in App Router
 
 import { useState, useEffect } from 'react'
-import { supabase } from '../lib/supabaseClient'
+import { supabase } from '../../lib/supabaseClient'
 
 interface Message {
   id: number
@@ -26,7 +26,7 @@ export default function Home() {
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'messages' },
         (payload) => {
-          setMessages(prev => [payload.new, ...prev])
+          setMessages(prev => [payload.new as Message, ...prev])
         }
       )
       .subscribe()
