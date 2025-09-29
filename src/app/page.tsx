@@ -75,7 +75,7 @@ export default function Home() {
         <textarea
           value={text}
           onChange={e => setText(e.target.value)}
-          placeholder="Message (e.g., 'First smile!')"
+          placeholder="Message (e.g., 'he's an ugly bastard')"
           style={{ width: '100%', padding: '0.5rem', marginBottom: '0.5rem' }}
         />
         <button type="submit" disabled={loading}>
